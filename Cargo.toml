@@ -1,0 +1,30 @@
+[package]
+name = "psp-pong"
+version = "0.1.0"
+authors = ["mov-rax <csharper.work@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.psp]
+version = "0.1.2"
+features = ["embedded-graphics"]
+
+
+[dependencies.rand]
+version = "0.8.0"
+features = ["small_rng", "rand_chacha"]
+default-features = false
+
+[dependencies.rand_chacha]
+version = "0.3.0"
+default-features = false
+
+[dependencies.arrayvec]
+version = "0.5.2"
+default-features = false
+
+[dependencies]
+embedded-graphics = "0.6.2"
+bitflags = "1.2.1"
+
